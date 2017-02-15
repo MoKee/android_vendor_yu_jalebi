@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,67 +28,32 @@ ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/yu/jalebi/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/yu/jalebi/proprietary/bin/cnd:system/bin/cnd \
-    vendor/yu/jalebi/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/yu/jalebi/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/yu/jalebi/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/yu/jalebi/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/yu/jalebi/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/yu/jalebi/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/yu/jalebi/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/yu/jalebi/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/yu/jalebi/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/yu/jalebi/proprietary/bin/radish:system/bin/radish \
-    vendor/yu/jalebi/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/yu/jalebi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/yu/jalebi/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/yu/jalebi/proprietary/bin/vm_bms:system/bin/vm_bms \
-    vendor/yu/jalebi/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/yu/jalebi/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/yu/jalebi/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/yu/jalebi/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    vendor/yu/jalebi/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/yu/jalebi/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/yu/jalebi/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/yu/jalebi/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/yu/jalebi/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/yu/jalebi/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/yu/jalebi/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/yu/jalebi/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
-    vendor/yu/jalebi/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    vendor/yu/jalebi/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/yu/jalebi/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/yu/jalebi/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/yu/jalebi/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/yu/jalebi/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/yu/jalebi/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/yu/jalebi/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/yu/jalebi/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/yu/jalebi/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/yu/jalebi/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/yu/jalebi/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/yu/jalebi/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/yu/jalebi/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/yu/jalebi/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/yu/jalebi/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libESXEGL_adreno.so:system/vendor/lib/egl/libESXEGL_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libESXGLESv1_CM_adreno.so:system/vendor/lib/egl/libESXGLESv1_CM_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libESXGLESv2_adreno.so:system/vendor/lib/egl/libESXGLESv2_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/yu/jalebi/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -96,13 +62,9 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libactuator_wv517s_f8865bs_camera.so:system/vendor/lib/libactuator_wv517s_f8865bs_camera.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libactuator_wv517s_f8865bs.so:system/vendor/lib/libactuator_wv517s_f8865bs.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_common.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_common.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_default_video.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_default_video.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_preview.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_preview.so \
@@ -117,15 +79,9 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_video_hd.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_video_hd.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_zsl.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_zsl.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -134,7 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -142,11 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/yu/jalebi/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/yu/jalebi/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
@@ -184,12 +134,10 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/yu/jalebi/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -205,30 +153,20 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/yu/jalebi/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/yu/jalebi/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/yu/jalebi/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/yu/jalebi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/yu/jalebi/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/yu/jalebi/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
@@ -240,10 +178,9 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     shutdownlistener \
     TimeService \
-    CNEService \
-    com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     qcnvitems \
     qcrilhook
 endif
+
+$(call inherit-product, vendor/qcom/binaries/msm8916-32/graphics/graphics-vendor.mk)
